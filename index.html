@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speech App</title>
+    <style>
+      #container {
+        text-align: center;
+        margin-top: 50px;
+      }
+      #btnDiv {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 30px;
+      }
+      #btnDiv > button {
+        font-size: 16px;
+      }
+      #btnDiv > button:nth-child(1) {
+        background-color: rgb(1, 189, 1);
+        color: white;
+        border: none;
+        padding: 7px 12px;
+      }
+      #btnDiv > button:nth-child(2) {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <textarea name="" id="text" cols="60" rows="10" value="abc"></textarea>
+      <div id="btnDiv">
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn">Pause</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./script.js"></script>
